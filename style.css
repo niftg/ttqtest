@@ -1,0 +1,37 @@
+#answer {
+  width: 3em;
+  display: inline;
+  color: black;
+  background-color: white;
+}
+#ts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#ts div {
+  width: 48px; height: 48px; border: 1px solid white;
+  background-size: auto 48px;
+  background-repeat: no-repeat;
+}
+#t1 {
+  background-image: url("https://toaq.github.io/TwE/tones/t1.png");
+}
+#t2 {
+  background-image: url("https://toaq.github.io/TwE/tones/t2.png");
+}
+#t3 {
+  background-image: url("https://toaq.github.io/TwE/tones/t3.png");
+}
+#t4 {
+  background-image: url("https://toaq.github.io/TwE/tones/t4.png");
+}
+#t5 {
+  background-image: url("https://toaq.github.io/TwE/tones/t5.png");
+}
+#t6 {
+  background-image: url("https://toaq.github.io/TwE/tones/t6.png");
+}
+#t7 {
+  background-image: url("https://toaq.github.io/TwE/tones/t7.png");
+}
