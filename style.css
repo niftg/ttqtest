@@ -4,6 +4,12 @@
   color: black;
   background-color: white;
 }
+#autoplay {
+  display: inline;
+}
+#was {
+  margin-left: 0.5em;
+}
 #ts {
   display: flex;
   flex-wrap: wrap;
