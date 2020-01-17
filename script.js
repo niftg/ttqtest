@@ -1,3 +1,4 @@
+window.autoplay = false;
 addEventListener('load', function(e) {
   document.querySelectorAll('#ts div')
     .forEach(v => {
@@ -9,6 +10,7 @@ addEventListener('load', function(e) {
     });
   document.getElementById('answer')
     .addEventListener('click', e => {const s = e.target.style; s.color = s.color=='white' ? 'black' : 'white';} );
+  document.querySelector('#autoplay label input').addEventListener('change', e => {autoplay = e.target.checked});
 
   newPrompt();
 });
@@ -40,10 +42,13 @@ function newPrompt() {
 
   prompt.src = file
   answer.textContent = `(${anstone})`
+  if(autoplay){prompt.play()}
 }
 function submit(num) {
   console.log(num)
   const ok = num == 't'+anstone
   document.getElementById(ok? 'correct': 'wrong').textContent -= -1
+  document.getElementById('was')
+    .textContent = ok ? '' : `(was tone ${anstone})`
   newPrompt()
 }
